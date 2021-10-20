@@ -1,0 +1,13 @@
+# -*- makefile -*-
+#
+# michael a.g. aïvázis <michael.aivazis@para-sim.com>
+# (c) 1998-2021 all rights reserved
+
+
+# the testsuite for the mdweb package
+mdweb.pkg.tests.stem := mdweb.pkg
+# depends on
+mdweb.pkg.tests.prerequisites := mdweb.pkg
+
+
+# end of file
