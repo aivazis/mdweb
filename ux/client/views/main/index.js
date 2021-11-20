@@ -8,12 +8,12 @@
 // framework
 import React from 'react'
 // routing
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 
 // locals
 import styles from './styles'
 // view
-import { NYI, Status } from '~/views'
+import { Status } from '~/views'
 // activities
 import { ActivityBar } from '~/activities'
 // widgets
@@ -35,7 +35,7 @@ const Panel = () => {
 
                     {/* the activity specific workarea */}
                     <Flex.Panel min={400} style={styles.flex} >
-                        <NYI />
+                        <Outlet />
                     </Flex.Panel>
 
                 </Flex.Box>
