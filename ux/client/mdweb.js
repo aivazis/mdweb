@@ -27,7 +27,7 @@ import {
     // the main page
     Main,
     // boilerplate
-    Loading, Stop,
+    Loading, NYI, Stop,
 } from '~/views'
 
 
@@ -42,7 +42,12 @@ const MdWebApp = () => {
     return (
         <Routes >
             {/* the app */}
-            <Route path="/*" element={<Main />} />
+            <Route path="/" element={<Main />} >
+                <Route path="experiment" element={<NYI />} />
+                <Route path="help" element={<NYI />} />
+                <Route path="about" element={<NYI />} />
+                <Route index element={<NYI />} />
+            </Route>
 
             {/* meta navigation */}
             {/* the closing page */}
